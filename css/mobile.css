@@ -1,0 +1,43 @@
+.side-bar{
+	position: relative;
+	width: 100%;
+	float: none;
+}
+
+.main{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.article-list{
+	margin: 0;
+}
+
+
+/*默认隐藏居中*/
+.side-bar .nav, 
+.side-bar .tag-list{
+	display: none;
+	text-align: center;
+}
+
+/*制作隐藏按钮*/
+/*如果 :checked点击  ~  隐藏 xxx  */
+#menu-checkbox:checked ~ .nav,
+#menu-checkbox:checked ~ .tag-list
+{
+	display: block;
+}
+
+#menu-toggle{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 18px;
+	font-weight: 100;
+	color: rgba(255,255,255,.7);
+}
+
